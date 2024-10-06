@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/gimanaya"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BKPM_E41231300"
+        tools:targetApi="31">
+        <activity
+            android:name=".Acara17_20"
+            android:exported="false" />
+        <activity
+            android:name=".DetailOnePiece"
+            android:exported="false" />
+        <activity
+            android:name=".Acara15_16"
+            android:exported="false" />
+        <activity
+            android:name=".Acara14"
+            android:exported="false" />
+        <activity
+            android:name=".Acara13"
+            android:exported="false" />
+        <activity
+            android:name=".Frame"
+            android:exported="false" />
+        <activity
+            android:name=".Relative"
+            android:exported="false" />
+        <activity
+            android:name=".Acara12"
+            android:exported="false" />
+        <activity
+            android:name=".Acara11"
+            android:exported="false" />
+        <activity
+            android:name=".Acara10"
+            android:exported="false" />
+        <activity
+            android:name=".Acara9"
+            android:exported="false" />
+        <activity
+            android:name=".GmapsActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyB_2L00n98OIwBL-eHWM77Lk9YKODazGgQ" />
+
+        <activity
+            android:name=".ListBkpm"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
