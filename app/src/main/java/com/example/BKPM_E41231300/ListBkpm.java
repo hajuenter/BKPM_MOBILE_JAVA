@@ -33,6 +33,8 @@ public class ListBkpm extends AppCompatActivity {
         list.add("Acara 15-16 Card View");
         list.add("Acara 17-20 Fragment");
         list.add("Acara 33 Google Maps");
+        list.add("Acara Google Maps Search dan Control");
+        list.add("Acara Google Maps Real Time");
 
         // Menggunakan this untuk mendapatkan context
         ArrayAdapter<String> adapterBkpm = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, list);
@@ -66,6 +68,15 @@ public class ListBkpm extends AppCompatActivity {
                     startActivity(intent);
                 } else if (position == 7) {
                     intent = new Intent(ListBkpm.this, Acara17_20.class);
+                    startActivity(intent);
+                } else if (position == 8) {
+                    intent = new Intent(ListBkpm.this, GmapsActivity.class);
+                    startActivity(intent);
+                } else if (position == 9) {
+                    intent = new Intent(ListBkpm.this, GmapsWithSearchActivity.class);
+                    startActivity(intent);
+                } else if (position == 10) {
+                    intent = new Intent(ListBkpm.this, GmapsLocationActivity.class);
                     startActivity(intent);
                 } else {
                     // Default intent jika item tidak cocok dengan yang di atas
