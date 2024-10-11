@@ -35,6 +35,7 @@ public class ListBkpm extends AppCompatActivity {
         list.add("Acara 33 Google Maps");
         list.add("Acara Google Maps Search dan Control");
         list.add("Acara Google Maps Real Time");
+        list.add("Acara Google Maps Sensor");
 
         // Menggunakan this untuk mendapatkan context
         ArrayAdapter<String> adapterBkpm = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, list);
@@ -77,6 +78,9 @@ public class ListBkpm extends AppCompatActivity {
                     startActivity(intent);
                 } else if (position == 10) {
                     intent = new Intent(ListBkpm.this, GmapsLocationActivity.class);
+                    startActivity(intent);
+                } else if (position == 11) {
+                    intent = new Intent(ListBkpm.this, GmapsSensor.class);
                     startActivity(intent);
                 } else {
                     // Default intent jika item tidak cocok dengan yang di atas
