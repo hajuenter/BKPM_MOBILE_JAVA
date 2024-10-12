@@ -80,7 +80,7 @@ public class ListBkpm extends AppCompatActivity {
                     intent = new Intent(ListBkpm.this, GmapsLocationActivity.class);
                     startActivity(intent);
                 } else if (position == 11) {
-                    intent = new Intent(ListBkpm.this, GmapsSensor.class);
+                    intent = new Intent(ListBkpm.this, AcaraSensor.class);
                     startActivity(intent);
                 } else {
                     // Default intent jika item tidak cocok dengan yang di atas

@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AcaraSensor">
+
+    <!-- TextView untuk menampilkan data Accelerometer -->
+    <TextView
+        android:id="@+id/accelerometer_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:padding="8dp"
+        android:text="Accelerometer Data"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:background="#FFFFFF"
+        android:gravity="center" />
+
+    <!-- TextView untuk menampilkan data Gyroscope -->
+    <TextView
+        android:id="@+id/gyroscope_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_below="@id/accelerometer_data"
+        android:padding="8dp"
+        android:text="Gyroscope Data"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:background="#FFFFFF"
+        android:gravity="center" />
+
+    <!-- TextView untuk menampilkan data Light Sensor -->
+    <TextView
+        android:id="@+id/light_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_below="@id/gyroscope_data"
+        android:padding="8dp"
+        android:text="Light Sensor Data"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:background="#FFFFFF"
+        android:gravity="center" />
+
+    <!-- TextView untuk menampilkan data Magnetic Field Sensor -->
+    <TextView
+        android:id="@+id/magnetic_field_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_below="@id/light_data"
+        android:padding="8dp"
+        android:text="Magnetic Field Data"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:background="#FFFFFF"
+        android:gravity="center" />
+
+    <!-- TextView untuk menampilkan data Proximity Sensor -->
+    <TextView
+        android:id="@+id/proximity_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_below="@id/magnetic_field_data"
+        android:padding="8dp"
+        android:text="Proximity Sensor Data"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:background="#FFFFFF"
+        android:gravity="center" />
+
+</RelativeLayout>
